@@ -282,6 +282,7 @@ for (const u of SOCIALS) h = rep(h, 'href="' + u + '"', 'href="./"');
 h = h.replace('</head>', `\t<style data-taskmove-logo>
 \t\tsvg.framer-1oku6q2 foreignObject{visibility:hidden}
 \t\tsvg.framer-1oku6q2{background:#000 url(./logo.jpeg) center 47%/auto 300% no-repeat}
+\t\t#__framer-badge-container{display:none!important}
 \t</style>\n</head>`);
 
 fs.writeFileSync(OUT_HTML, h);
